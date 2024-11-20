@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinMaster - Connect Pinterest</title>
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Connect Your Pinterest Account</h1>
+        <button id="connect-btn">Connect Pinterest</button>
+    </div>
+    <script>
+        const clientId = "1507772";
+        const redirectUri = "https://pinmaster.netlify.app/callback";
+        document.getElementById('connect-btn').addEventListener('click', () => {
+            const authUrl = `https://www.pinterest.com/oauth/?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=read_public,write_public`;
+            window.location.href = authUrl;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "pinmaster",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Static files ready!'"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}

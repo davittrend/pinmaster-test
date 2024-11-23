@@ -11,7 +11,7 @@ exports.handler = async (event) => {
 
     const clientId = "1507772";
     const clientSecret = "12e86e7dd050a39888c5e753908e80fae94f7367";
-    const redirectUri = "https://pinmaster.netlify.app/callback";
+    const redirectUri = "https://pinmaster-test.netlify.app/callback";
 
     const tokenUrl = "https://api.pinterest.com/v5/oauth/token";
 
